@@ -8,7 +8,9 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <!-- Favicon -->
     <link rel='shortcut icon' type='image/png' href='/favicon.png' />
     <link rel='shortcut icon' type='image/png' href='favicon.png' />
@@ -49,8 +51,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
                         <li><a href="#">Enquiry</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -136,52 +139,31 @@
         </div>
 
         <div class="container-fluid bg-3 text-center">
-            <h3>Some of my Work</h3>
+            <h3>Gallery</h3>
             <br>
             <div class="row">
                 <div class="col-sm-3">
-
-
+                    <a href="img/2.JPG" rel="lightbox[yolo]" class="thumbnail">
+                        <img src="img/2.JPG" height="380px">
+                    </a>
                 </div>
                 <div class="col-sm-3">
-
-
+                    <a href="img/3.JPG" rel="lightbox[yolo]" class="thumbnail">
+                        <img src="img/3.JPG" height="380px">
+                    </a>
                 </div>
                 <div class="col-sm-3">
-
-
+                    <a href="img/4.JPG" rel="lightbox[yolo]" class="thumbnail">
+                        <img src="img/4.JPG" height="380px">
+                    </a>
                 </div>
                 <div class="col-sm-3">
-
-
+                    <a href="img/5.JPG" rel="lightbox[yolo]" class="thumbnail">
+                        <img src="img/5.JPG" height="380px">
+                    </a>
                 </div>
             </div>
         </div>
-        <br>
-
-        <div class="container-fluid bg-3 text-center">
-            <div class="row">
-                <div class="col-sm-3">
-
-
-                </div>
-                <div class="col-sm-3">
-
-
-                </div>
-                <div class="col-sm-3">
-
-
-                </div>
-                <div class="col-sm-3">
-
-
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-
     </div>
 
     <section id="contactUs">
@@ -189,7 +171,7 @@
 
             <iframe name="votar" style="display:none;"></iframe>
             <!-- no-page-reload -->
-            <form class="form-horizontal col-lg-offset-1 col-lg-10" method="post" action=""  id="queryForm" target="votar">
+            <form class="form-horizontal col-lg-offset-1 col-lg-10" method="post" action="" id="queryForm" target="votar">
                 <fieldset>
                     <legend style="text-align: center">Queries?</legend>
                     <div class="form-group">
@@ -221,7 +203,7 @@
                             <button type="submit" class="btn btn-primary" id="querySubmit" value="Submit">Submit</button>
                         </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" style="padding-bottom: 20em;">
                         <dialog id="queryModal">
                             <h2>Query submitted<br>We'll get right back to you.</h2>
                         </dialog>
@@ -230,23 +212,21 @@
             </form>
         </div>
     </section>
-    <section>
-        <h2 style="padding-top: 5em">Find us</h2>
-    </section>
-    <section id="contact" class="bg-dark">
+
+    <section id="contactUs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom: 40px">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Get In Touch!</h2>
                     <p></p>
                     <hr class="primary">
                 </div>
                 <div class="col-lg-2 col-lg-offset-3 text-center">
-                    <i class="fa fa-phone orange fa-3x"></i>
+                    <i class="fa fa-phone fa-3x"></i>
                     <p>+91 </p>
                 </div>
                 <div class="col-lg-2 text-center">
-                    <p><a href="#"><i class="fa fa-facebook fa-3x bounceIn"></i></a></p>
+                    <p><a href="#"><i class="fa fa-facebook fa-3x"></i></a></p>
                 </div>
                 <div class="col-lg-2 text-center">
                     <a href="mailto:"><i class="fa fa-envelope fa-3x"></i></a>
@@ -256,10 +236,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-top: 100px">
                     <div style="border-right:3px solid; height:30px" class="orange col-lg-6 col-md-6">
-                        <p class="text-muted">&copy; Champ Kidz</p>
+                        <p>&copy; Champ Kidz</p>
                     </div>
                     <div class="orange col-lg-6 col-md-6">
-                        <p class="text-muted" id="credits">Made by <a href="https://www.facebook.com/sreetam.das">Sreetam Das</a></p>
+                        <p id="credits">Made by <a href="https://www.facebook.com/sreetam.das">Sreetam Das</a></p>
                     </div>
                 </div>
             </div>
@@ -270,6 +250,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
 
 </html>
