@@ -1,3 +1,11 @@
+@font-face {
+    font-family: funky;
+    src: url(funky.ttf);
+}
 .text-center {
     text-align: center; !important
+}
+
+.yellow {
+    color: #ffcc2a;
 }
